@@ -1,0 +1,11 @@
+.logoTitle {
+color: #fff;
+font-size: 10px;
+display: flex;
+align-items: center;
+text-decoration: none;
+cursor: pointer;
+    /* a:active{
+        color: #000000;
+    } */
+}
