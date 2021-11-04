@@ -1,8 +1,7 @@
 .productsContainer{
   min-height: 100vh;
   padding: 5rem calc((100vw - 1300px) / 2);
-  /* background-image: url(); */
-  background-color: rgba(0, 0, 0, 0.658);
+  background-image: url(../images/background-texture.jpg);
   color: black;
 }
 
@@ -63,13 +62,14 @@
   background: #e31837;
   color: #fff;
   transition: 0.2 ease-out;
-  /* &:hover {
-    background: #ffc500;
+ 
+}
+  .popularProductsButton:hover {
+    background: #e31837;
     transition: 0.2s ease-out;
     cursor: pointer;
     color: #000;
-  } */
-}
+  } 
 
 .heading{
     font-size: 50px;

@@ -16,7 +16,7 @@ const PopularProducts = () => {
                                 <h2 className="productsTitle">{product.name}</h2>
                                 <p className="productsDesc">{product.desc}</p>
                                 <p className="prodcutsPrice">{product.price}</p>
-                                <Button color="warning">{product.button}</Button>
+                                <Button className="popularProductsButton" color="warning">{product.button}</Button>
                             </div>
                         </div>
                     )

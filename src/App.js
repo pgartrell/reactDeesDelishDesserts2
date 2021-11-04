@@ -4,6 +4,7 @@ import Hero from "./Components/Header&Hero/hero"
 import PopularProducts from './Components/PopularProducts/popularProducts';
 import {productData} from "./Data/data"
 import Footer from "./Components/Footer/footer"
+import Feature from './Components/Feature/feature';
 
 class App extends Component {
   render() {
@@ -11,7 +12,9 @@ class App extends Component {
         <BrowserRouter>
           <Hero />
           <PopularProducts data={productData} />
+          <Feature />
           <Footer />
+          
         </BrowserRouter>
     );
   }

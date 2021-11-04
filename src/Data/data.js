@@ -37,7 +37,7 @@ export const productData = [
     
 ]
 
-export const galleryPhotos = [
+export const GalleryPhotos = [
     {
       img: brownieWithIceCream,
       name: "Brownie with Ice Cream",
