@@ -18,23 +18,23 @@
 };
 
 .heroItems { 
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items:flex-start;
-   height: 100vh;
-   max-height: 100%;
-   padding: 0 2 rem;
-   width: 650px;
-   color: #fff;
-   text-transform: uppercase;
-   line-height: 1;
-   font-weight: bold;
-
-   @media screen and (max-width: 650px) {
-       width: 100%
-   }
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 100vh;
+    max-height: 100%;
+    padding: 0 2 rem;
+    width: 650px;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+    font-weight: bold;
+ 
+    @media screen and (max-width: 650px) {
+        width: 100%
+    }
+ }
 
 h1 {
    font-size: clamp(2.5rem, 10vw, 5rem);
@@ -47,4 +47,51 @@ p{
     font-size: clamp(2rem, 2.5vw, 3rem);
     margin-bottom: 2rem;
 }
+
+.topnav{
+    background: transparent;
+    height: 80px;
+    padding-right: 3px;
+    justify-content: right;
+    font-weight: 700;
+    display: flex;
+}
+
+.nav-link{
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: right;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0px 10px;
+    /* a:active{
+        color: #000000;
+    } */
+
+    @media screen and (max-width: 400px) {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+    }
+}
+
+
+a.navbarBrand.navbar-Brand{
+    color : palevioletred;
+}
+/* .bars{
+  display: none;
+  color: #808080;
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 75%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  } */
+
+
 

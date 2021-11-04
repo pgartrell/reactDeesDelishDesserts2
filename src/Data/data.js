@@ -1,8 +1,17 @@
-import cupcakes from '../images/cupcakes.PNG'
+import cupCakes from '../images/cupcakes.PNG'
+import pinkAfroCake from "../images/pinkAfroCake.PNG"
+import glamPops from "../images/glamPops.PNG"
+import brownieWithIceCream from "../images/brownieWIcecream.jpg"
+import cake32 from "../images/32Cake.PNG"
+import geodeCake from "../images/GeodeCake.PNG"
+import lionKing from "../images/lionKingCake.PNG"
+import flowery from "../images/orangeFlowerCake.PNG"
+import strawberries from "../images/strawberries.PNG"
+
 
 export const productData = [
     {
-        img: cupcakes,
+        img: cupCakes,
         alt: 'cupcakes',
         name: 'Cupcakes',
         desc: 'Decorative Cupcakes',
@@ -20,8 +29,8 @@ export const productData = [
     {
         img: glamPops,
         alt: 'glamPops',
-        name: 'GlamPops',
-        desc: 'glamPops',
+        name: 'Glam Pops',
+        desc: 'Glam Pops',
         price: '20.00',
         button: 'Add to Cart'
     }
@@ -30,47 +39,56 @@ export const productData = [
 
 export const galleryPhotos = [
     {
-      img: "Brownie with Ice Cream",
+      img: brownieWithIceCream,
+      name: "Brownie with Ice Cream",
       width: 4,
       height: 3
     },
     {
-      img: "32 Cake",
+      img: cake32,
+      name: "32 Cake",
       width: 1,
       height: 1
     },
     {
-      img: "Glam Pops",
+      img: glamPops,
+      name: "Glam Pops",
       width: 3,
       height: 4
     },
     {
-      img: "Cupcakes",
+      img: cupCakes,
+      name:"Cupcakes",
       width: 3,
       height: 4
     },
     {
-      img: "Geode Cake",
+      img: geodeCake,
+      name: "Geode Cake",
       width: 3,
       height: 4
     },
     {
-      img: "Lion King",
+      img: lionKing,
+      name: "Lion King",
       width: 4,
       height: 3
     },
     {
-      img: "Flowery",
+      img: flowery,
+      name: "Flowery",
       width: 3,
       height: 4
     },
     {
-      img: "Afro Cake",
+      img: pinkAfroCake,
+      name: "Afro Cake",
       width: 4,
       height: 3
     },
     {
-      img: "Strawberries",
+      img: strawberries,
+      name: "Strawberries",
       width: 4,
       height: 3
     }
