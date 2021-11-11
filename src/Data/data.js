@@ -39,57 +39,155 @@ export const productData = [
 
 export const GalleryPhotos = [
     {
+      id: 1,
       img: brownieWithIceCream,
       name: "Brownie with Ice Cream",
       width: 4,
-      height: 3
+      height: 3,
+      type: "brownieWithIceCream"
     },
     {
+      id: 2,
       img: cake32,
       name: "32 Cake",
       width: 1,
-      height: 1
+      height: 1,
+      type: "cake32"
     },
     {
+      id: 3,
       img: glamPops,
       name: "Glam Pops",
       width: 3,
-      height: 4
+      height: 4,
+      type:"glamPops"
     },
     {
+      id: 4,
       img: cupCakes,
       name:"Cupcakes",
       width: 3,
-      height: 4
+      height: 4,
+      type:"cupCakes"
     },
     {
+      id: 5,
       img: geodeCake,
       name: "Geode Cake",
       width: 3,
-      height: 4
+      height: 4,
+      type:"geodeCake"
     },
     {
+      id: 6,
       img: lionKing,
       name: "Lion King",
       width: 4,
-      height: 3
+      height: 3,
+      type:"lionKing"
     },
     {
+      id: 7,
       img: flowery,
       name: "Flowery",
       width: 3,
-      height: 4
+      height: 4,
+      type:"flowery"
     },
     {
+      id: 8,
       img: pinkAfroCake,
       name: "Afro Cake",
       width: 4,
-      height: 3
+      height: 3,
+      type:"pinkAfroCake"
     },
     {
+      id: 9,
       img: strawberries,
       name: "Strawberries",
       width: 4,
-      height: 3
+      height: 3,
+      type:"strawberries"
     }
   ];
+
+  export const CarouselImages= [
+    
+      {
+        id: 1,
+        original: brownieWithIceCream,
+        thumbnail:brownieWithIceCream
+      },
+      {
+        id: 2,
+        original: cake32,
+        thumbnail: cake32
+      },
+      {
+        id: 3,
+        original: glamPops,
+        thumbnail:glamPops
+      },
+      // {
+      //   id: 4,
+      //   img: cupCakes,
+      //   name:"Cupcakes",
+      //   width: 3,
+      //   height: 4,
+      //   type:"cupCakes"
+      // },
+      // {
+      //   id: 5,
+      //   img: geodeCake,
+      //   name: "Geode Cake",
+      //   width: 3,
+      //   height: 4,
+      //   type:"geodeCake"
+      // },
+      // {
+      //   id: 6,
+      //   img: lionKing,
+      //   name: "Lion King",
+      //   width: 4,
+      //   height: 3,
+      //   type:"lionKing"
+      // },
+      // {
+      //   id: 7,
+      //   img: flowery,
+      //   name: "Flowery",
+      //   width: 3,
+      //   height: 4,
+      //   type:"flowery"
+      // },
+      // {
+      //   id: 8,
+      //   img: pinkAfroCake,
+      //   name: "Afro Cake",
+      //   width: 4,
+      //   height: 3,
+      //   type:"pinkAfroCake"
+      // },
+      // {
+      //   id: 9,
+      //   img: strawberries,
+      //   name: "Strawberries",
+      //   width: 4,
+      //   height: 3,
+      //   type:"strawberries"
+      // }
+    ]
+  
+
+  export const FILTERS = [
+    "brownieWithIceCream",
+    "cake32",
+    "glamPops",
+    "geodeCake",
+    "lionKing",
+    "flowery",
+    "pinkAfroCake",
+    "strawberries"
+  ];
+

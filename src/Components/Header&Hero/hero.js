@@ -35,7 +35,7 @@ render() {
                         <NavbarBrand className="navbarBrand" href="/">Dees Delish Desserts</NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav className="ml-auto" navbar>
+                            <Nav className="mr-auto" navbar>
                                 <NavItem>
                                     <NavLink  className="nav-link" to="/about">About</NavLink>
                                 </NavItem>

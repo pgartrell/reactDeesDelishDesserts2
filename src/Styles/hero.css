@@ -57,6 +57,15 @@ p{
     display: flex;
 }
 
+@media screen and (max-width: 400px) {
+       
+      .nav-link{  position: absolute;
+        top: 10px;
+        left: 25px;
+      }
+
+  
+}
 .nav-link{
     color: #fff;
     font-size: 20px;
@@ -65,16 +74,13 @@ p{
     text-decoration: none;
     cursor: pointer;
     margin: 0px 10px;
-    /* a:active{
-        color: #000000;
-    } */
 
-    @media screen and (max-width: 400px) {
-        position: absolute;
-        top: 10px;
-        left: 25px;
-    }
+
+
 }
+  .nav-link:active{
+        color: #000000;
+    }
 
 
 a.navbarBrand.navbar-Brand{
