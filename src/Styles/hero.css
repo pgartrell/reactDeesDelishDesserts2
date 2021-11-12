@@ -57,15 +57,14 @@ p{
     display: flex;
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
        
       .nav-link{  position: absolute;
         top: 10px;
         left: 25px;
-      }
-
-  
+      }  
 }
+
 .nav-link{
     color: #fff;
     font-size: 20px;

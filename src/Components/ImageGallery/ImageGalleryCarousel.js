@@ -4,9 +4,11 @@ import ImageGallery from "react-image-gallery";
 class ImageGalleryCarousel extends Component {
   constructor(props) {
     super(props);
+    
   }
   render() {
-    return <ImageGallery items={this.props.images} />;
+    return <ImageGallery items={this.props.images}
+    startIndex={this.props.img_ix-1} />;
   }
 }
 

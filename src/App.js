@@ -3,26 +3,35 @@ import { BrowserRouter as Router, Switch, Route, Redirect} from "react-router-do
 import About from "./Pages/About";
 import GalleryPage from "./Pages/GalleryPage";
 import '../node_modules/react-image-gallery/styles/css/image-gallery.css'
-
+import EventsPage from "./Pages/EventsPage";
+import './Styles/globalStyles.css'
+import background from "./images/background-texture.jpg"
 
 class App extends Component {
   render() {
     return (
-      <Router>    
-        <Switch>
+      <div styles={{backgroundImage: `url(${background})`}}>
+        <Router>    
+          <Switch>
 
-          <Route path="/about">
-            <About />
-          </Route>
+            <Route path="/about">
+              <About />
+            </Route>
 
-          <Route path="/gallery">
-            <GalleryPage />
-          </Route>
+            <Route path="/gallery">
+              <GalleryPage />
+            </Route>
 
-          <Redirect to='/about' />
+            
+            <Route path="/events">
+              <EventsPage />
+            </Route>
 
-        </Switch>
-      </Router>
+            <Redirect to='/about' />
+
+          </Switch>
+        </Router>
+      </div>
     );
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+// import Gallery from '../Components/ImageGallery/GalleryModal'
 import ImageGalleryCarousel from '../Components/ImageGallery/ImageGalleryCarousel'
 import MainMenu from '../Components/ImageGallery/MainMenu'
 
@@ -24,6 +25,7 @@ import MainMenu from '../Components/ImageGallery/MainMenu'
 const GalleryPage = () => {
     return (
         <div>
+            {/* <Gallery /> */}
           <MainMenu />
           {/* <ImageGalleryCarousel />
             Use this one for Carousel: <ImageGallery items={images} />; */}

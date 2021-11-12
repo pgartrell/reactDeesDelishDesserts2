@@ -129,54 +129,31 @@ export const GalleryPhotos = [
         original: glamPops,
         thumbnail:glamPops
       },
-      // {
-      //   id: 4,
-      //   img: cupCakes,
-      //   name:"Cupcakes",
-      //   width: 3,
-      //   height: 4,
-      //   type:"cupCakes"
-      // },
-      // {
-      //   id: 5,
-      //   img: geodeCake,
-      //   name: "Geode Cake",
-      //   width: 3,
-      //   height: 4,
-      //   type:"geodeCake"
-      // },
-      // {
-      //   id: 6,
-      //   img: lionKing,
-      //   name: "Lion King",
-      //   width: 4,
-      //   height: 3,
-      //   type:"lionKing"
-      // },
-      // {
-      //   id: 7,
-      //   img: flowery,
-      //   name: "Flowery",
-      //   width: 3,
-      //   height: 4,
-      //   type:"flowery"
-      // },
-      // {
-      //   id: 8,
-      //   img: pinkAfroCake,
-      //   name: "Afro Cake",
-      //   width: 4,
-      //   height: 3,
-      //   type:"pinkAfroCake"
-      // },
-      // {
-      //   id: 9,
-      //   img: strawberries,
-      //   name: "Strawberries",
-      //   width: 4,
-      //   height: 3,
-      //   type:"strawberries"
-      // }
+      {
+        id: 4,
+        original: cupCakes,
+        thumbnail:cupCakes
+      },
+      {
+        id: 5,
+        original: geodeCake,
+        thumbnail:geodeCake
+      },
+      {
+        id: 7,
+        original: flowery,
+        thumbnail: flowery
+      },
+      {
+        id: 8,
+        original: pinkAfroCake,
+        thumbnail:pinkAfroCake
+      },
+      {
+        id: 9,
+        original: strawberries,
+        thumbnail:strawberries
+      }
     ]
   
 
@@ -190,4 +167,14 @@ export const GalleryPhotos = [
     "pinkAfroCake",
     "strawberries"
   ];
+
+ export const galleryImages = [
+    
+      cupCakes,
+      pinkAfroCake,
+      strawberries,
+      lionKing,
+      geodeCake
+    
+  ]
 

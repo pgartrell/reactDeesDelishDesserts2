@@ -1,11 +1,5 @@
 import React, { Component } from "react";
 import {
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  Collapse,
-  NavItem,
-  Nav,
   Modal,
   ModalBody,
   ModalHeader,
@@ -16,7 +10,8 @@ import Filter from "./Filter";
 import CardInfo from "./CardInfo";
 import { CarouselImages, GalleryPhotos } from "../../Data/data";
 import "../../Styles/hero.css";
-import { NavLink } from "react-router-dom";
+import NavBar from "../Header&Hero/navBar";
+import Footer from "../Footer/footer";
 import ImageGalleryCarousel from "./ImageGalleryCarousel";
 
 
@@ -29,61 +24,36 @@ class MainMenu extends Component {
       selectedCard: null,
       cardFilter: null,
       modal: false,
-      carouselImages: CarouselImages
+      carouselImages: CarouselImages,
+      isNavOpen: true
     };
+    // this.noRefCheck=this.noRefCheck.bind(this)
   }
+
+  
 
   cardSelect(cardId) {
     this.setState({ selectedCard: cardId, modal: true });
   }
 
-  noRefCheck() { 
-    let prevState= this.state.modal
-    this.setState({ modal: !prevState });
+  // noRefCheck() { 
+  //   let prevState= this.state.modal
+  //   this.setState({ modal: !prevState });
+  // }
+  // noRefCheck() { 
+  //   this.setState({ modal: !this.state.isOpen });
+  // }
+
+  toggleNav() {
+    this.setState({
+      isNavOpen: !this.state.isNavOpen
+    })
   }
 
   render() {
     return (
       <div>
-        <Navbar dark color="primary">
-          <div className="container">
-            <Navbar className="topnav" sticky="top" expand="md">
-              <NavbarBrand className="navbarBrand" href="/">
-                Dees Delish Desserts
-              </NavbarBrand>
-              <NavbarToggler onClick={this.toggleNav} />
-              <Collapse isOpen={this.state.isNavOpen} navbar>
-                <Nav className="mr-auto" navbar>
-                  <NavItem>
-                    <NavLink className="nav-link" to="/about">
-                      About
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink className="nav-link" to="/gallery">
-                      Gallery
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink className="nav-link" to="/contact">
-                      Contact
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink className="nav-link" to="/events">
-                      Events
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink className="nav-link" to="/makeAnOrder">
-                      Make an Order
-                    </NavLink>
-                  </NavItem>
-                </Nav>
-              </Collapse>
-            </Navbar>
-          </div>
-        </Navbar>
+        <NavBar />
         <Filter
           cards={this.state.cards}
           cardSelect={(cardId) => this.cardSelect(cardId)}
@@ -97,12 +67,12 @@ class MainMenu extends Component {
           }
         />
                     
-        <Modal size="lg" isOpen={this.state.modal}  toggle={this.noRefCheck} onExit={() => this.setState({modal:true})}>
-          <ModalHeader toggle={function noRefCheck() {}}>
-            Modal title
+        <Modal size="lg" isOpen={this.state.modal}  onExit={() => this.setState({modal:true})}>
+          <ModalHeader toggle={this.noRefCheck} >
+            Dees Delish Desserts
           </ModalHeader>
           <ModalBody>
-            <ImageGalleryCarousel images={this.state.carouselImages} />
+            <ImageGalleryCarousel images={this.state.carouselImages} img_ix={this.state.selectedCard} />
           </ModalBody>
           <ModalFooter>
             <Button
@@ -116,6 +86,7 @@ class MainMenu extends Component {
             <Button onClick={function noRefCheck() {}}>Cancel</Button>
           </ModalFooter>
         </Modal> 
+        <Footer />
       </div>
     );
   }
