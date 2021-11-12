@@ -25,21 +25,14 @@ class MainMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cards: GalleryPhotos,
-      selectedCard: null,
-      cardFilter: null,
-      modal: false,
-      carouselImages: CarouselImages
+      isNavOpen: true
     };
   }
 
-  cardSelect(cardId) {
-    this.setState({ selectedCard: cardId, modal: true });
-  }
-
-  noRefCheck() { 
-    let prevState= this.state.modal
-    this.setState({ modal: !prevState });
+  toggleNav() {
+    this.setState({
+      isNavOpen: !this.state.isNavOpen
+    });
   }
 
   render() {
@@ -84,38 +77,6 @@ class MainMenu extends Component {
             </Navbar>
           </div>
         </Navbar>
-        <Filter
-          cards={this.state.cards}
-          cardSelect={(cardId) => this.cardSelect(cardId)}
-          filter={this.state.cardFilter}
-        />
-        <CardInfo
-          card={
-            this.state.cards.filter(
-              (card) => card.id === this.state.selectedCard
-            )[0]
-          }
-        />
-                    
-        <Modal size="lg" isOpen={this.state.modal}  toggle={this.noRefCheck} onExit={() => this.setState({modal:true})}>
-          <ModalHeader toggle={function noRefCheck() {}}>
-            Modal title
-          </ModalHeader>
-          <ModalBody>
-            <ImageGalleryCarousel images={this.state.carouselImages} />
-          </ModalBody>
-          <ModalFooter>
-            <Button
-              color="primary"
-              onClick={function noRefCheck() {
-                return true;
-              }}
-            >
-              Add to Cart
-            </Button>{" "}
-            <Button onClick={function noRefCheck() {}}>Cancel</Button>
-          </ModalFooter>
-        </Modal> 
       </div>
     );
   }
