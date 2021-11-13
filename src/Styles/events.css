@@ -1,95 +1,129 @@
-.eventsBackgroundImage{
-   
-}
-.grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
-    gap: 1rem;
-    justify-content: center;
-    padding-top: 50px;
-   
-    
-    overflow:hidden;
-    box-shadow:0 2px 20px rgb(202, 188, 188) ;
-    border-radius: 5px;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer;
-    transition: transform 200ms ease-in;
-    background-image: url(../images/background-texture.jpg);
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 1rem;
+  justify-content: center;
+  padding-top: 50px;
+
+  overflow: hidden;
+  box-shadow: 0 2px 20px rgb(202, 188, 188);
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  background-image: url(../images/background-texture.jpg);
 }
 
-.renderCardWrapper{
-  
+.renderCardWrapper {
+  margin: 0 2rem;
+  line-height: 2;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
 }
-.grid{
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 50px;
-}
-
-.cardImage{
-    height: 30rem;
-    width: 100%;
-    object-fit: cover;
-}
-
-.cardTitle{
-    padding: 1rem;
-}
-
-.cardText{
-    padding: 0 1rem;
-    font-size: medium;
+.grid {
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 50px;
+  justify-content: center;
+  margin: 0 auto;
 }
 
-.btn{
-    padding: 1rem;
-    font-family: inherit;
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 1rem;
-    border: 2px solid black;
-    color: rgb(163, 10, 36);
-    border-radius: 5px;
-    transition: pink 200ms ease-in, color 200ms ease-in;
+.cardImage {
+  width: 100%;
+  object-fit: cover;
 
+  height: 450px;
+  min-width: 300px;
+  max-width: 100%;
 }
 
-.featureCard{
-    display: flex;
-    justify-content: center;
+.cardTitle {
+  padding: 1rem;
 }
 
-.featureCardHeader{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    font-family: sans-serif;
+.cardText {
+  padding: 0 1rem;
+  font-size: medium;
 }
 
-.featureCardTitle{
-    font-size: 50px;
-    font-family: cursive;
-    text-align: center;
+.btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid black;
+  color: rgb(163, 10, 36);
+  border-radius: 5px;
+  transition: pink 200ms ease-in, color 200ms ease-in;
 }
 
-.featureCardText{
-    text-align: center;
-    font-size: 40px;
-    font-family: sans-serif;
+.featureCard {
+  display: flex;
+  justify-content: center;
+  outline: 5px solid black;
+  box-shadow: 0 2px 20px black;
+  border-radius: 5px;
+  margin-top: 40px;
+  background-image: url(../images/background-cupcakes.jpg);
 }
 
-.featureBtn{
-    text-align: center;
+div.featureCardHeader.card-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: sans-serif;
+  outline: 5px solid rgba(255, 166, 0, 0.836);
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.eventsh1{
-    padding-top: 100px;
-    padding-bottom: 30px;
-    align-items: left;
+.featureCardTitle {
+  font-size: 50px;
+  font-family: cursive;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.featureCardText {
+  text-align: center;
+  font-size: 40px;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+.featureBtn {
+  text-align: center;
+}
+
+.diveEventsh1 {
+  margin-top: 100px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  align-items: left;
+}
+
+.eventsh1 {
+  margin-top: 100px;
+  font-size: 60px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
 }

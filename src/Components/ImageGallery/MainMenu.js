@@ -27,6 +27,7 @@ class MainMenu extends Component {
       carouselImages: CarouselImages,
       isNavOpen: true
     };
+    this.toggleModal = this.toggleModal.bind(this)
     // this.noRefCheck=this.noRefCheck.bind(this)
   }
 
@@ -50,7 +51,17 @@ class MainMenu extends Component {
     })
   }
 
+  toggleModal() {
+    this.setState({modal: !this.state.modal})
+  }
+
   render() {
+    const currentCard = this.state.cards.filter(c => c.id === this.state.selectedCard);
+    const firstImage = currentCard.length ? ({ "id": 'featured', "original": currentCard[0].img, "thumbnail": currentCard[0].img }) : null;
+    const carouselImages = [...this.state.carouselImages];
+    if (firstImage) {
+        carouselImages.unshift(firstImage);
+    }
     return (
       <div>
         <NavBar />
@@ -67,8 +78,8 @@ class MainMenu extends Component {
           }
         />
                     
-        <Modal size="lg" isOpen={this.state.modal}  onExit={() => this.setState({modal:true})}>
-          <ModalHeader toggle={this.noRefCheck} >
+        <Modal size="lg" isOpen={this.state.modal}  toggle={this.noRefCheck} onExit={() => this.setState({modal:true})}>
+          <ModalHeader toggle={function noRefCheck() {}} >
             Dees Delish Desserts
           </ModalHeader>
           <ModalBody>

@@ -2,7 +2,7 @@
 
 .heroContainer{
     background: linear-gradient(to right, rgba(0,0,0,0.7),
-    rgba(0,0,0,0.1)); 
+    rgba(0,0,0,0.1));
     background-image: url(../images/goldenCheescake.PNG);
     height: 100vh;
     background-position: center;
@@ -17,7 +17,7 @@
     padding: 0rem calc((100vw-1300px) /2);
 };
 
-.heroItems { 
+.heroItems {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,7 +30,7 @@
     text-transform: uppercase;
     line-height: 1;
     font-weight: bold;
- 
+
     @media screen and (max-width: 650px) {
         width: 100%
     }
@@ -58,11 +58,11 @@ p{
 }
 
 @media (max-width: 400px) {
-       
+
       .nav-link{  position: absolute;
         top: 10px;
         left: 25px;
-      }  
+      }
 }
 
 .nav-link{
@@ -97,6 +97,10 @@ a.navbarBrand.navbar-Brand{
     font-size: 1.8rem;
     cursor: pointer;
   } */
+
+  .aboutTitle{
+      padding-top: 300px;
+  }
 
 
 

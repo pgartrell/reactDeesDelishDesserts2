@@ -6,6 +6,7 @@ import '../node_modules/react-image-gallery/styles/css/image-gallery.css'
 import EventsPage from "./Pages/EventsPage";
 import './Styles/globalStyles.css'
 import background from "./images/background-texture.jpg"
+import ContactPage from "./Pages/ContactPage";
 
 class App extends Component {
   render() {
@@ -25,6 +26,10 @@ class App extends Component {
             
             <Route path="/events">
               <EventsPage />
+            </Route>
+
+            <Route path="/contact">
+              <ContactPage />
             </Route>
 
             <Redirect to='/about' />

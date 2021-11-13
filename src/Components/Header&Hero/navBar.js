@@ -49,9 +49,6 @@ export default class NavBar extends Component {
                 <NavItem className="nav-item">
                   <NavLink className="nav-link" to="/events">Events</NavLink>
                 </NavItem>
-                <NavItem className="nav-item">
-                  <NavLink className="nav-link" to="/makeAnOrder">Make an Order</NavLink>
-                </NavItem>
               </Nav>
             </Collapse>
           </Navbar>

@@ -43,7 +43,7 @@ class CardInfo extends Component {
             </div>
             <div className="col-12 col-md-5 border border-primary">
               <h4>Dessert Details</h4>
-              {this.renderInfo(card)}
+              {/* {this.renderInfo(card)} */}
             </div>
           </div>
         </div>

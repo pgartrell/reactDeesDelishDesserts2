@@ -25,7 +25,7 @@ import MainMenu from '../Components/ImageGallery/MainMenu'
 const GalleryPage = () => {
     return (
         <div>
-            {/* <Gallery /> */}
+            
           <MainMenu />
           {/* <ImageGalleryCarousel />
             Use this one for Carousel: <ImageGallery items={images} />; */}

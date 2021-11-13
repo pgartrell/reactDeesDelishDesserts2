@@ -48,14 +48,11 @@ render() {
                                 <NavItem>
                                     <NavLink  className="nav-link" to="/events">Events</NavLink>
                                 </NavItem>
-                                <NavItem>
-                                    <NavLink  className="nav-link" to="/makeAnOrder">Make an Order</NavLink>
-                                </NavItem>
                             </Nav>
                             </Collapse>
                     </Navbar>
 
-                        <h1>Dees Delish Desserts</h1>
+                        <h1 className="aboutTitle">Dees Delish Desserts</h1>
                         <p>For Complete Sweet Relief Come See Dee</p>
                         <Button color="warning" size="lg">
                         <i className="fa fa-sign-in fa-lg" />Make an Order
