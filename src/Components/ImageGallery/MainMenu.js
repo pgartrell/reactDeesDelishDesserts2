@@ -20,17 +20,21 @@ class MainMenu extends Component {
   constructor(props) {
     super(props);
     this.state = {
+<<<<<<< HEAD
       cards: GalleryPhotos,
       selectedCard: null,
       cardFilter: null,
       modal: false,
       carouselImages: CarouselImages,
+=======
+>>>>>>> af9742c41fbd9d738f2efba77e72f2fa1ba47e5b
       isNavOpen: true
     };
     this.toggleModal = this.toggleModal.bind(this)
     // this.noRefCheck=this.noRefCheck.bind(this)
   }
 
+<<<<<<< HEAD
   
 
   cardSelect(cardId) {
@@ -53,6 +57,12 @@ class MainMenu extends Component {
 
   toggleModal() {
     this.setState({modal: !this.state.modal})
+=======
+  toggleNav() {
+    this.setState({
+      isNavOpen: !this.state.isNavOpen
+    });
+>>>>>>> af9742c41fbd9d738f2efba77e72f2fa1ba47e5b
   }
 
   render() {
@@ -64,6 +74,7 @@ class MainMenu extends Component {
     }
     return (
       <div>
+<<<<<<< HEAD
         <NavBar />
         <Filter
           cards={this.state.cards}
@@ -98,6 +109,47 @@ class MainMenu extends Component {
           </ModalFooter>
         </Modal> 
         <Footer />
+=======
+        <Navbar dark color="primary">
+          <div className="container">
+            <Navbar className="topnav" sticky="top" expand="md">
+              <NavbarBrand className="navbarBrand" href="/">
+                Dees Delish Desserts
+              </NavbarBrand>
+              <NavbarToggler onClick={this.toggleNav} />
+              <Collapse isOpen={this.state.isNavOpen} navbar>
+                <Nav className="mr-auto" navbar>
+                  <NavItem>
+                    <NavLink className="nav-link" to="/about">
+                      About
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink className="nav-link" to="/gallery">
+                      Gallery
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink className="nav-link" to="/contact">
+                      Contact
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink className="nav-link" to="/events">
+                      Events
+                    </NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink className="nav-link" to="/makeAnOrder">
+                      Make an Order
+                    </NavLink>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
+          </div>
+        </Navbar>
+>>>>>>> af9742c41fbd9d738f2efba77e72f2fa1ba47e5b
       </div>
     );
   }
