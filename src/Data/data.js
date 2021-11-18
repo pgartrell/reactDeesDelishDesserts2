@@ -174,7 +174,9 @@ export const GalleryPhotos = [
       pinkAfroCake,
       strawberries,
       lionKing,
-      geodeCake
+      geodeCake,
+      flowery,
+      cake32
     
   ]
 

@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import { galleryImages } from '../../Data/data';
-import '../../Styles/imageGallery2.scss'
+import '../../Styles/imageGallery2.css'
+
+
 
 class Gallery extends Component {
     constructor(props) {
@@ -56,14 +58,15 @@ class Gallery extends Component {
             findNext={this.findNext} 
             hasPrev={this.state.currentIndex > 0} 
             hasNext={this.state.currentIndex + 1 < galleryImages.length} 
-            src={galleryImages[this.state.currentIndex]} 
+            // src={galleryImages[this.state.currentIndex]} 
+            src={"Assets/images/strawberries.PNG"}
           />
         </div>
       )
     }
   }
   
-  class GalleryModal extends React.Component {
+  class GalleryModal extends Component {
     constructor() {
       super();
       this.handleKeyDown = this.handleKeyDown.bind(this);
@@ -89,14 +92,14 @@ class Gallery extends Component {
         return null;
       }
       return (
-        <div>
+        <div> 
           <div className="modal-overlay" onClick={closeModal}></div>
-          <div isOpen={!!src} className="modal">
-            <div className='modal-body'>
+          <div isOpen={true}>
+            <div>
               <a href="#" className='modal-close' onClick={closeModal} onKeyDown={this.handleKeyDown}>&times;</a>
               {hasPrev && <a href="#" className='modal-prev' onClick={findPrev} onKeyDown={this.handleKeyDown}>&lsaquo;</a>}
               {hasNext && <a href="#" className='modal-next' onClick={findNext} onKeyDown={this.handleKeyDown}>&rsaquo;</a>}
-              <img src={src} />
+              <img width="300px" src={src} />
             </div>
           </div>
         </div>
