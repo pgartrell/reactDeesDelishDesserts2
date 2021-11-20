@@ -1,92 +1,238 @@
-import React from 'react'
-import 'photoswipe/dist/photoswipe.css'
-import 'photoswipe/dist/default-skin/default-skin.css'
-import '../../Styles/AnotherImageGallery.css'
-import bananaPudding from "assets/images/bananaPudding.PNG"
-
-
-import { Gallery, Item } from 'react-photoswipe-gallery'
+import React from "react";
+import "../../../node_modules/photoswipe/dist/photoswipe.css";
+import "../../../node_modules/photoswipe/dist/default-skin/default-skin.css";
+import "../../Styles/AnotherImageGallery.css";
+import Cake32 from "../../images/32Cake.PNG";
+import cupCakes from "../../images/cupcakes.PNG";
+import pinkAfroCake from "../../images/pinkAfroCake.PNG";
+import glamPops from "../../images/glamPops.PNG";
+import brownieWithIceCream from "../../images/brownieWIcecream.jpg";
+import geodeCake from "../../images/GeodeCake.PNG";
+import lionKing from "../../images/lionKingCake.PNG";
+import flowery from "../../images/orangeFlowerCake.PNG";
+import strawberries from "../../images/strawberries.PNG";
+import { Gallery, Item } from "react-photoswipe-gallery";
 
 const AnotherImageGallery = () => (
- 
-
- <Gallery id="gallery">
-    <Item
-        original="assets/images/bananaPudding.PNG"
-        thumbnail="assets/images/bananaPudding.PNG"
+  <Gallery id="gallery">
+    {/* <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: "240px 171px 171px",
+        gridTemplateRows: "114px 114px",
+        gridGap: 12,
+      }}
+    > */}
+      <Item
+        original={Cake32}
+        thumbnail={Cake32}
         width="1600"
         height="1600"
         title="$18.00"
-        id="so-first"
-    >
-      {({ ref, open }) => (
-        <img ref={ref} onClick={open} src="assets/images/bananaPudding.PNG"/>
-      )}
-    </Item>
+        id="galleryItem1"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                ref={ref}
+                onClick={open}
+                src={Cake32}
+                width="600"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
 
-    <Item
-      original="https://placekitten.com/1024/768?image=2"
-      thumbnail="https://placekitten.com/80/60?image=2"
-      width="1024"
-      height="768"
-    >
-      {({ ref, open }) => (
-        <img ref={ref} onClick={open} src="https://placekitten.com/80/60?image=2" />
-      )}
-    </Item> 
+      <Item
+        original={cupCakes}
+        thumbnail={cupCakes}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem2"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                ref={ref}
+                onClick={open}
+                src={cupCakes}
+                width="600"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
+
+      <Item
+        original={pinkAfroCake}
+        thumbnail={pinkAfroCake}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem3"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                ref={ref}
+                onClick={open}
+                src={pinkAfroCake}
+                width="600"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
+
+      <Item
+        original={glamPops}
+        thumbnail={glamPops}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem4"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                className="smallItemStyles"
+                ref={ref}
+                onClick={open}
+                src={glamPops}
+                width="600"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
+
+      <Item
+        original={brownieWithIceCream}
+        thumbnail={brownieWithIceCream}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem5"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                ref={ref}
+                onClick={open}
+                src={brownieWithIceCream}
+                width="600"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
+
+      <Item
+        original={geodeCake}
+        thumbnail={geodeCake}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem6"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                ref={ref}
+                onClick={open}
+                src={geodeCake}
+                width="500"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
+
+      <Item
+        original={lionKing}
+        thumbnail={lionKing}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem7"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                ref={ref}
+                onClick={open}
+                src={lionKing}
+                width="600"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
+
+      <Item
+        original={flowery}
+        thumbnail={flowery}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem8"
+      >
+        {({ ref, open }) => (
+          <div className="responsive">
+            <div className="galleryImg">
+              <img
+                ref={ref}
+                onClick={open}
+                src={flowery}
+                width="600"
+                height="500"
+              />
+            </div>
+          </div>
+        )}
+      </Item>
+
+      <Item
+        original={strawberries}
+        thumbnail={strawberries}
+        width="1024"
+        height="768"
+        title="$18.00"
+        id="galleryItem9"
+      >
+        {({ ref, open }) => (
+          // <div className="responsive">
+          //   <div className="galleryImg">
+          <img
+            ref={ref}
+            onClick={open}
+            src={strawberries}
+            width="600"
+            height="500"
+          />
+          //   </div>
+          // </div>
+        )}
+      </Item>
+    {/* </div> */}
   </Gallery>
-)
+);
 
-export default AnotherImageGallery
+export default AnotherImageGallery;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-//From Youtube Video
-// import React, {useState} from 'react'
-// import { GalleryPhotos } from '../../Data/data'
-// import '../../Styles/AnotherImageGallery.css'
-// import '@fortawesome/fontawesome-svg-core'
-
-
-// const AnotherImageGallery = () => {
-
-//     const [model, setModel] = useState(false);
-//     const [tempimgSrc, setTempImgSrc] =  useState('')
-//     const getImg = (img) =>{
-//         setTempImgSrc(img);
-//         setModel(true);
-//     }
-//     return (
-//         <>
-//             <div className={model? "model open": "model"}>
-//                 <img src={tempimgSrc} />
-//                 <i class="fas fa-window-close"></i>
-                    
-//             </div>
-//             <h1>Dees Delish Dessert Gallery</h1>
-//             <div className="gallery">
-//                 {GalleryPhotos.map((item, index) => {
-//                     return(
-//                         <div className="pics" key={index} onClick={() => getImg(item.img)}>
-//                             <img src={item.img} style={{width: '100%'}}/>
-//                         </div>
-//                     )
-//                 })}
-//             </div>
-
-//         </>
-//     )
-// }
-
-// export default AnotherImageGallery
