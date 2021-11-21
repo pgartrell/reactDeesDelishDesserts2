@@ -14,11 +14,12 @@ import strawberries from "../../images/strawberries.PNG";
 import { Gallery, Item } from "react-photoswipe-gallery";
 
 const AnotherImageGallery = () => (
-  <Gallery id="gallery">
+  <Gallery> 
+  <div id="gallery">
     {/* <div
       style={{
         display: "grid",
-        gridTemplateColumns: "240px 171px 171px",
+        gridTemplateColumns: "400px 400px 400px 400px",
         gridTemplateRows: "114px 114px",
         gridGap: 12,
       }}
@@ -154,7 +155,7 @@ const AnotherImageGallery = () => (
                 ref={ref}
                 onClick={open}
                 src={geodeCake}
-                width="500"
+                width="600"
                 height="500"
               />
             </div>
@@ -217,8 +218,8 @@ const AnotherImageGallery = () => (
         id="galleryItem9"
       >
         {({ ref, open }) => (
-          // <div className="responsive">
-          //   <div className="galleryImg">
+          <div className="responsive">
+            <div className="galleryImg">
           <img
             ref={ref}
             onClick={open}
@@ -226,11 +227,12 @@ const AnotherImageGallery = () => (
             width="600"
             height="500"
           />
-          //   </div>
-          // </div>
+             </div>
+           </div>
         )}
       </Item>
     {/* </div> */}
+    </div>
   </Gallery>
 );
 
