@@ -23,7 +23,7 @@ const Events = () => {
         <Card.Body className="cardBody">
           <Card.Title className="cardTitle">{card.title}</Card.Title>
           <Card.Text className="cardText">{card.text}</Card.Text>
-          <Button variant="light" className="btn" >Check it Out</Button>
+          <Button variant="light" className="checkItOutbtn" >Check it Out</Button>
         </Card.Body>
       </Card>
     );

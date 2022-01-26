@@ -7,12 +7,14 @@ import EventsPage from "./Pages/EventsPage";
 import './Styles/globalStyles.css'
 import background from "./images/background-texture.jpg"
 import ContactPage from "./Pages/ContactPage";
+import socialMediaBar from "./Components/SocialMediaBar/socialMediaBar"
 
 class App extends Component {
 
   render() {
     return (
       <div styles={{backgroundImage: `url(${background})`}}>
+        <socialMediaBar />
         <Router>    
           <Switch>
 

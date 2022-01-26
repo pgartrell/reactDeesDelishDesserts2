@@ -1,7 +1,8 @@
 import React, { Component } from "react";
-import {Button, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Nav} from "reactstrap";
+import {Button} from "reactstrap";
 import "../../Styles/hero.css"
-import { NavLink } from 'react-router-dom';
+import NavBar from "./navBar";
+import { Link } from 'react-router-dom'
 
 
 
@@ -30,33 +31,10 @@ render() {
         <div className= "heroContainer">      
             <div className= "heroContent">           
                 <div className="heroItems">
-
-                    <Navbar className="topnav" sticky="top" expand="md">
-                        <NavbarBrand className="navbarBrand" href="/">Dees Delish Desserts</NavbarBrand>
-                        <NavbarToggler onClick={this.toggleNav} />
-                        <Collapse isOpen={this.state.isNavOpen} navbar>
-                            <Nav className="mr-auto" navbar>
-                                <NavItem>
-                                    <NavLink  className="nav-link" to="/about">About</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink  className="nav-link" to="/gallery">Gallery</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink  className="nav-link" to="/contact">Contact</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink  className="nav-link" to="/events">Events</NavLink>
-                                </NavItem>
-                            </Nav>
-                            </Collapse>
-                    </Navbar>
-
+                    <NavBar />
                         <h1 className="aboutTitle">Dees Delish Desserts</h1>
                         <p>For Complete Sweet Relief Come See Dee</p>
-                        <Button color="warning" size="lg">
-                        <i className="fa fa-sign-in fa-lg" />Make an Order
-                        </Button>
+                        <Link to="/contact"><Button color="warning" size="lg"><i className="makeOrderButton fa fa-sign-in fa-lg" />Make an Order</Button></Link>
                 </div>                
             </div>
         </div>

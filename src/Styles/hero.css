@@ -48,58 +48,12 @@ p{
     margin-bottom: 2rem;
 }
 
-.topnav{
-    background: transparent;
-    height: 80px;
-    padding-right: 3px;
-    justify-content: right;
-    font-weight: 700;
-    display: flex;
-}
-
-@media (max-width: 400px) {
-
-      .nav-link{  position: absolute;
-        top: 10px;
-        left: 25px;
-      }
-}
-
-.nav-link{
-    color: #fff;
-    font-size: 20px;
-    display: flex;
-    align-items: right;
-    text-decoration: none;
-    cursor: pointer;
-    margin: 0px 10px;
-
-
-
-}
-  .nav-link:active{
-        color: #000000;
-    }
-
-
-a.navbarBrand.navbar-Brand{
-    color : palevioletred;
-}
-/* .bars{
-  display: none;
-  color: #808080;
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 75%);
-    font-size: 1.8rem;
-    cursor: pointer;
-  } */
-
   .aboutTitle{
       padding-top: 300px;
+  }
+  
+  .makeOrderButton{
+      padding-right: 20px;
   }
 
 

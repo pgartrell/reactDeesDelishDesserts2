@@ -24,6 +24,46 @@ li{
   color: black
 }
 
+.linksHeader{
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.socialHeader{
+  color: black;
+  font-weight: bold;
+  font-size: x-large;
+}
+
 .footerLinks{
-  color: black
+  color: black;
+  font-weight: bold;
+  
+}
+.btn-tiktok{
+  color: white;
+  font-weight: bold;
+  border: 5px solid rgb(204, 0, 255);
+  width: 50px;
+  height: 65px 
+}
+
+.btn-facebook, .btn-instagram {
+  width: 50px;
+  height: 65px 
+}
+
+.fa-instagram, .fa-facebook{ 
+  padding-top: 15px;
+}
+
+.btnPhone, .btnEmail{
+  color: black;
+  font-weight: bold;  
+}
+
+.fa-envelope-o, .fa-phone {
+  color: white;
+  size: 20px;
 }
